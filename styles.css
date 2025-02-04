@@ -69,11 +69,20 @@ a {
 }
 
 .showcase-container {
-    display: grid;
-    grid-template-columns: 100% 100% 100%;
+    display: flex;
+    background: url("static/assets/magic-banner.jpg");
+    background-size: cover;
     width: 100%;
     height: 35vh;
-    overflow-x: hidden;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.showcase-container > h1 {
+    font-weight: bold;
+    font-size: 6vh;
 }
 
 .logo {
@@ -85,48 +94,6 @@ a {
     margin: 13px 60px;
     z-index: 2;
     color: white;
-}
-
-.showcase-container > .item {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-}
-
-.showcase-container > .item > img {
-    width: 100%;
-}
-
-.showcase-container > .showcase-arrows {
-    display: flex;
-    width: 100%;
-    height: 35%;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.showcase-container > .dots {
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: end;
-    width: 100%;
-    height: 30%;
-}
-
-.showcase-container > .dots > a {
-
-}
-
-.showcase-container > .dots > a > div {
-    background-color: white;
-    width: 20px;
-    height: 20px;
-    margin: 20px;
-    border-radius: 50%;
 }
 
 nav {
@@ -179,12 +146,7 @@ main {
     margin: 25px;
 }
 
-.content-container > .item > img {
-    width: 100%;
-    height: 100%;
-}
-
-.content-container > .item > div {
+.content-container > .item:hover > div {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -198,7 +160,13 @@ main {
     box-sizing: border-box;
 }
 
-.content-container > .item > div > h1 {
+.content-container > .item > img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container > .item > div {
+    display: none;
     
 }
 
