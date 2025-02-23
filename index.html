@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="static/styles/product-list.css">
     <script src="static/scripts/alpine.min.js"></script>
     <title>Magic Galore - Products</title>
 </head>
 <body>
     <header class="showcase-container">
-        <img class="logo" src="static/assets/logo.svg" alt="Logo">
+        <a href=""><img class="logo" src="static/assets/logo.svg" alt="Logo"></a>
         <h1>Magic Galore</h1>
+        <h2>Your one-stop shop for Magic: The Gathering cards!</h2>
     </header>
     <nav>
         <div>
-            <a href="/">Orders</a>
+            <a href="/">Precons</a>
+            <a href="/">Cart</a>
             <a href="/">Login</a>
         </div>
     </nav>
     <main>
         <section class="content-container">
-            <a class="item">
+            <a class="item" href="/product-details.html">
                 <img src="static/assets/breakthrough.jpg" alt="card">
                 <div>
                     <h1>Breakthrough</h1>
@@ -41,7 +43,7 @@
                     <p>$0.99</p>
                 </div>
             </a>
-            <a class="item">
+            <a class="item" href="/product-details.html">
                 <img src="static/assets/breakthrough.jpg" alt="card">
                 <div>
                     <h1>Breakthrough</h1>
@@ -62,7 +64,7 @@
                     <p>$0.99</p>
                 </div>
             </a>
-            <a class="item">
+            <a class="item" href="/product-details.html">
                 <img src="static/assets/breakthrough.jpg" alt="card">
                 <div>
                     <h1>Breakthrough</h1>
@@ -83,7 +85,7 @@
                     <p>$0.99</p>
                 </div>
             </a>
-            <a class="item">
+            <a class="item" href="/product-details.html">
                 <img src="static/assets/breakthrough.jpg" alt="card">
                 <div>
                     <h1>Breakthrough</h1>
@@ -129,5 +131,8 @@
             <button type="submit">Submit</button>
         </form>
     </main>
+    <footer>
+        &#169; 2025 Magic Galore
+    </footer>
 </body>
 </html>
