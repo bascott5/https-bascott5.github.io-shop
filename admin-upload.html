@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="static/scripts/alpine.min.js"></script>
+    <script defer src="static/scripts/htmx.min.js"></script>
+    <script src="static/scripts/admin.js"></script>
+    <title>Magic Galore - Admin Upload</title>
+</head>
+<body>
+    <main>
+        <form action="upload-products" method="POST" x-data="upload">
+            <input type="file" name="json" accept=".json" x-bind="fileChange">
+            <template x-for="(jsonFile, index) in jsonFiles">
+                <section class="json-container">
+                    <div :id="index" x-bind="clickFile">
+                        <p x-text="jsonFile.name"></p>
+                    </div>
+                </section>
+            </template>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
