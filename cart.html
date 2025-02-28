@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="static/styles/cart.css">
     <script defer src="static/scripts/alpine.min.js"></script>
     <script defer src="static/scripts/htmx.min.js"></script>
+    <script src="static/scripts/cart.js"></script>
     <title>Magic Galore - Cart</title>
 </head>
 <body>
@@ -13,12 +14,12 @@
         <a href="/"><img class="logo" src="static/assets/logo.svg" alt="Logo"></a>
         <div>
             <a href="/">Precons</a>
-            <a href="/">Cart</a>
+            <a href="/cart.html">Cart</a>
             <a href="/">Login</a>
         </div>
     </nav>
     <main>
-        <section class="items-container">
+        <section x-data="cart" class="items-container">
             <table>
                 <tr>
                     <td class="delete"><img src="static/assets/delete.png" alt="Delete"></td>
@@ -46,7 +47,7 @@
         <section class="checkout-container">
             <div>
                 <h1>Total:</h1>
-                <h1>$5.49</h1>
+                <h1 class="total">$2.97</h1>
             </div>
             <button>Checkout</button>
         </section>

@@ -139,8 +139,20 @@ nav > div > a:hover {
     padding: 15px;
     color: white;
     font-weight: bold;
-    border: none;
+    border: 2px solid orangered;
     border-radius: 5px;
+}
+
+.admin-products > section > button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: orangered;
+}
+
+.admin-products > section > button:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
 .admin-search-container > input {
@@ -155,10 +167,22 @@ nav > div > a:hover {
 .admin-search-container > button {
     padding: 10px;
     background-color: orangered;
-    border: none;
+    border: 2px solid orangered;
     border-radius: 5px;
     color: white;
     font-weight: bold;
+}
+
+.admin-search-container > button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: orangered;
+}
+
+.admin-search-container > button:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
 .products-table {
@@ -192,10 +216,22 @@ nav > div > a:hover {
     color: white;
     background-color: orangered;
     padding: 10px;
-    border: none;
+    border: 2px solid orangered;
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.5vh;
+}
+
+.products-table > tbody > tr > td > a > button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: orangered;
+}
+
+.products-table > tbody > tr > td > a > button:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
 .admin-edit {
@@ -240,6 +276,19 @@ nav > div > a:hover {
     font-size: 1.5vh;
     background-color: orangered;
     border-radius: 10px;
+    border: 2px solid orangered;
+}
+
+.admin-edit > form > button:hover {
+    background-color: white;
+    border: 2px solid white;
+    color: orangered;
+}
+
+.admin-edit > form > button:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
 .admin-upload {
