@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/admin.css">
     <script defer src="static/scripts/alpine.min.js"></script>
     <script defer src="static/scripts/htmx.min.js"></script>
     <script src="static/scripts/admin.js"></script>
     <title>Magic Galore - Admin Upload</title>
 </head>
 <body>
-    <main>
+    <nav>
+        <a href="/"><img class="logo" src="static/assets/logo.svg" alt="Logo"></a>
+        <div>
+            <a href="/admin-products.html">Products</a>
+            <a href="/admin-upload.html">Upload</a>
+        </div>
+    </nav>
+    <main class="admin-upload">
         <form action="upload-products" method="POST" x-data="upload">
-            <input type="file" name="json" accept=".json" x-bind="fileChange">
+            <div class="file-upload">
+                <label for="json">Upload a .json file...</label>
+                <input type="file" name="json" id="json" accept=".json" x-bind="fileChange">
+            </div>
             <template x-for="(jsonFile, index) in jsonFiles">
                 <section class="json-container">
                     <div :id="index" x-bind="clickFile">
@@ -19,7 +30,7 @@
                     </div>
                 </section>
             </template>
-            <button type="submit">Submit</button>
+            <button type="submit" class="upload-submit">Submit</button>
         </form>
     </main>
 </body>

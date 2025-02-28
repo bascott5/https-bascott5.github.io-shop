@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/admin.css">
     <script defer src="static/scripts/alpine.min.js"></script>
     <script defer src="static/scripts/htmx.min.js"></script>
     <title>Magic Galore - Admin Edit</title>
 </head>
 <body>
-    
+    <nav>
+        <a href="/"><img class="logo" src="static/assets/logo.svg" alt="Logo"></a>
+        <div>
+            <a href="/admin-products.html">Products</a>
+            <a href="/admin-upload.html">Upload</a>
+        </div>
+    </nav>
+    <main class="admin-edit">
+        <form action="">
+            <div>
+                <p>Product ID</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Name</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Description</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Category ID</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Image Path</p>
+                <input type="text">
+            </div>
+            <div>
+                <p>Price</p>
+                <input type="text">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
 </body>
 </html>
